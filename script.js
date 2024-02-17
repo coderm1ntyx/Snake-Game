@@ -42,28 +42,28 @@ initializeGame();
 // Handle keyboard inputs for snake movement
 document.addEventListener('keydown', function (event) {
     switch (event.key) {
-        case 'arrowup':
+        case 'ArrowUp':
         case 'w':
             if (dy === 0) {
                 dx = 0;
                 dy = -GRID_SIZE;
             }
             break;
-        case 'arrowdown':
+        case 'ArrowDown':
         case 's':
             if (dy === 0) {
                 dx = 0;
                 dy = GRID_SIZE;
             }
             break;
-        case 'arrowleft':
+        case 'ArrowLeft':
         case 'a':
             if (dx === 0) {
                 dx = -GRID_SIZE;
                 dy = 0;
             }
             break;
-        case 'arrowright':
+        case 'ArrowRight':
         case 'd':
             if (dx === 0) {
                 dx = GRID_SIZE;
